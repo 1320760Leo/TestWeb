@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta  charset="UTF-8">
+        <title> html5-Künste</title>
+    </head>
+    <body>
+        <h1>Suchfelder</h1>
+        Normales Feld: <input type="text" value="Eingabe"><br> 
+        Suchfeld: <input type="search">
+        <br/>
+        <h1>Eingaben für Telefonnummern</h1>
+        Telefon: <input type="tel"><br> 
+        E-Mail: <input type="email"><br> 
+        URL: <input type="url">
+        <br/>
+        <h1>Zahlen</h1>
+        Zahlen: <input type="number" min="0" max="24" step="1"><br> 
+        Bereiche: <input type="range">
+        <br/>
+        <h1>Datum und Uhrzeit</h1>
+        Datum: <input type="date"><br>
+        Datum und Uhrzeit: <input type="datetime"><br>
+        Datum und Uhrzeit: <input type="datetime-local"><br>             Uhrzeit: <input type="time">
+        <br/>
+        Farbe: <input type="color" name="favcolor" value="#ff0002" >
+        <input type="submit">
+        
+    <br/>
+        <h6>Autovervollständigung</h6>
+        Name eines Simpsons
+        <input type="text" autocomplete="on" list="simpsons">
+        
+        <datalist id="simpsons"> 
+            <option value="Homer"/> 
+            <option value="Marge"/> 
+            <option value="Lisa"/> 
+            <option value="Bart"/> 
+            <option value="Lisa"/> 
+            <option value="Mona"/> 
+            <option value="Abe"/>
+        </datalist>
+        
+    <br/>
+        <h1>Platzhalter</h1>
+        <input type="text" name="user" placeholder="Benutzername">
+        <input type="password" name="password" placeholder="Passwort">
+        
+    <br/>
+        <h1>Automatische Validierung</h1>
+        <form>
+            E-Mail-Adresse: <input size="30" type="email" name="adresse" id="adresse"> <br>
+            <input type="submit">
+        </form>
+        
+        <form>
+            Vorname <input size="30" type="text" name="vorname" required><br>  
+            Name <input size="30" type="text" name="nachname" required><br> 
+            Telefon <input size="12" type="tel" name="telefon"><br>
+            <input type="submit">
+        </form>
+        
+        <br/>
+        <h1>Validierung per REDEX</h1>
+        
+        <form>
+Postleitzahl: 
+            <input size="5" type="text" name="plz" pattern="[0-9]{5}"><br> 
+            <input type="submit">
+        </form>
+
+    </body>
+    
+</html>
